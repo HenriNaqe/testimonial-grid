@@ -1,0 +1,120 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.container {
+  background-color: #eeeeee;
+  display: grid;
+  grid-template-columns: 18.75rem 18.75rem 18.75rem 18.75rem;
+  grid-template-rows: 20rem 20rem;
+  grid-template-areas:
+    "box1 box1 box2 box5"
+    "box3 box4 box4 box5";
+}
+.box1 {
+  width: fit-content;
+  background-color: #6a30c3;
+  grid-area: box1;
+  margin: 10px;
+  padding: 20px;
+  color: whitesmoke;
+  border-radius: 15px;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 5px right 70px;
+}
+.box2 {
+  background-color: #3b5260;
+  grid-area: box2;
+  margin: 10px;
+  width: fit-content;
+  padding: 20px;
+  color: whitesmoke;
+  border-radius: 15px;
+}
+.box3 {
+  background-color: white;
+  grid-area: box3;
+  margin: 10px;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 15px;
+}
+.box4 {
+  background-color: #151829;
+  grid-area: box4;
+  margin: 10px;
+  width: fit-content;
+  padding: 20px;
+  color: whitesmoke;
+  border-radius: 15px;
+}
+.box5 {
+  background-color: white;
+  grid-area: box5;
+  margin: 10px;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 15px;
+}
+.header1 {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.name1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+}
+.job1 {
+  position: relative;
+  bottom: 60px;
+  font-weight: 900;
+}
+p {
+  font-size: 14px;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+}
+img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.img1 {
+  border: solid #a673f2 2px;
+}
+h3 {
+  position: relative;
+  bottom: 5px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+h5 {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+@media (max-width: 750px) {
+  .container {
+    display: grid;
+    grid-template-columns: 20rem;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5";
+  }
+  .box1 {
+    background-position: top 5px right 30px;
+  }
+}
